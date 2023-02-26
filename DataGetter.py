@@ -29,17 +29,6 @@ for site in news_sites:
 
 avg_sentiments = {site: sum(sentiments[site])/len(sentiments[site]) for site in sentiments}
 
-# Plot the data
-# x = [i for i, _ in enumerate(avg_sentiments)]
-# bar_width = 0.2
-
-# plt.bar(x, [avg_sentiments[site] for site in news_sites], width=bar_width)
-# plt.xticks([i + bar_width/2 for i in x], news_sites)
-# plt.xlabel("News Sites")
-# plt.ylabel("Sentiment")
-# plt.title("Sentiment Analysis of News Headlines")
-# plt.show()
-
 for site in news_sites:
     print(avg_sentiments[site])
 
