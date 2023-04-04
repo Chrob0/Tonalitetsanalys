@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Load Excel file into a Pandas DataFrame
-df = pd.read_excel('G:\My Drive\Skola\Akademisk kommunikation\sentiments.xlsx')
+df = pd.read_excel('.\sentiments.xlsx')
 
 # Filter data by Site URL
 df = df[df['Site'] == 'https://dn.se']
